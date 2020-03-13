@@ -9,7 +9,6 @@ public class BoidManager : MonoBehaviour
     public int numOfBoids;
     
     public float boidSeparationDistance = 1f;
-
     [Range(0,2f)] public float weight_cohesion;
     [Range(0,2f)] public float weight_alignment;
     [Range(0,2f)] public float weight_separation;
@@ -25,7 +24,7 @@ public class BoidManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //
     }
 
     void CreateBoid(){

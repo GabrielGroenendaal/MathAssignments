@@ -24,7 +24,7 @@ public class BoidBehavior : MonoBehaviour
         Vector3 separation = Vector3.zero;
 
         Vector3 targetSeek = boidManager.transform.position - this.transform.position;
-
+        //Vector3 targetSeek = Input.mousePosition - this.transform.position;
         foreach (BoidBehavior boidFriend in boidManager.boidList) {
             if (boidFriend == this) continue;
 
