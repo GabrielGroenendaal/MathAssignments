@@ -5,18 +5,27 @@ using UnityEngine;
 public class BoidBehavior : MonoBehaviour
 {
     Vector3 velocity;
+    //public GameObject child;
+    //public GameObject childPrefab;
     public float speed;
+    public float incrementer;
     public BoidManager boidManager;
     
     // Start is called before the first frame update
     void Start()
     {
         velocity = new Vector3(Random.value, Random.value, Random.value);
+        
+        //child = Instantiate(childPrefab);
+        //updateChild();
     }
 
     // Update is called once per frame
     void Update()
     {
+        //speed += Mathf.Sin(incrementer);
+        //incrementer += Time.time;
+        
         Vector3 currentPosition = this.transform.position;
 
         Vector3 cohesion = boidManager.transform.position;
@@ -59,5 +68,13 @@ public class BoidBehavior : MonoBehaviour
 
 
         this.transform.position = currentPosition + velocity * (speed * Time.deltaTime);
+
+        //updateChild();
     }
+    
+    /*public void updateChild(){
+        child.transform.rotation = this.transform.rotation;
+        child.transform.Rotate(0,0,90); 
+        child.transform.position = this.transform.position;
+    }*/
 }
