@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc27fd45977525145bbba57d172f6a19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boidPrefab: {fileID: 7341477912148164692, guid: 8cdfee84d068fd047bb9c0c37e9f05e3,
+  boidPrefab: {fileID: 2609993603271187125, guid: c3965ed8a9736924988d12129795f93e,
     type: 3}
   boidList: []
   numOfBoids: 200
